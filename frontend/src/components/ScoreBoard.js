@@ -51,7 +51,7 @@ const ScoreBoard = ({ players, currentPlayerIndex, currentTurnScore = 0 }) => {
                   )}
                 </div>
                 <div className="text-right">
-                  <div className="text-lg font-bold">{player.score}</div>
+                  <div className="text-lg font-bold">{displayScore}</div>
                   <div className="text-xs text-muted-foreground">
                     {player.paletCount > 0 ? `${player.paletCount} palets` : ''}
                   </div>
