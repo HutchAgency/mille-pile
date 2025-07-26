@@ -118,7 +118,9 @@ const GameBoard = ({
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Points restants</p>
-                    <p className="text-2xl font-bold text-purple-600">{Math.max(0, pointsToWin)}</p>
+                    <p className={`text-2xl font-bold ${pointsToWin === 0 ? 'text-yellow-600' : 'text-purple-600'}`}>
+                      {pointsToWin}
+                    </p>
                   </div>
                 </div>
 
