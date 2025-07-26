@@ -37,7 +37,7 @@ const TriangleBoard = ({ paletPlacements, onPaletPlacementChange }) => {
   };
 
   return (
-    <div className="relative w-96 h-96 mx-auto">
+    <div className="relative w-96 h-[500px] mx-auto">
       {/* Triangle outline */}
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-100 to-yellow-200 border-4 border-yellow-800 shadow-2xl"
            style={{
