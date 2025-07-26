@@ -153,7 +153,11 @@ const GameBoard = ({
 
           {/* Right Panel */}
           <div className="space-y-6">
-            <ScoreBoard players={players} currentPlayerIndex={currentPlayerIndex} />
+            <ScoreBoard 
+              players={players} 
+              currentPlayerIndex={currentPlayerIndex} 
+              currentTurnScore={totalScore}
+            />
             {showHistory && (
               <GameHistory 
                 history={gameHistory} 
