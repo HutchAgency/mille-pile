@@ -18,7 +18,9 @@ const ScoreBoard = ({ players, currentPlayerIndex, currentTurnScore = 0 }) => {
         {sortedPlayers.map((player, index) => {
           const isCurrentPlayer = players.findIndex(p => p.name === player.name) === currentPlayerIndex;
           const isLeader = index === 0;
-          const progress = (player.score / 1000) * 100;
+          const displayScore = isCurrentPlayer ? player.score + currentTurnScore : player.score;
+          const progress = (displayScore / 1000) * 100;
+          const pointsRemaining = Math.max(0, 1000 - displayScore);
           
           return (
             <div
