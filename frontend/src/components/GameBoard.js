@@ -37,7 +37,7 @@ const GameBoard = ({
 
   const { totalScore, paletCount } = calculateTurnScore();
   const projectedScore = currentPlayer.score + totalScore;
-  const pointsToWin = 1000 - currentPlayer.score;
+  const pointsToWin = Math.max(0, 1000 - projectedScore);
 
   const handleValidateTurn = () => {
     onValidateTurn(paletPlacements);
