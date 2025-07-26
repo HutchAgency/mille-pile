@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Trophy, Target, Users } from 'lucide-react';
 
-const ScoreBoard = ({ players, currentPlayerIndex }) => {
+const ScoreBoard = ({ players, currentPlayerIndex, currentTurnScore = 0 }) => {
   const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
 
   return (
