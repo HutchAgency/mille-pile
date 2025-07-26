@@ -73,7 +73,7 @@ const ScoreBoard = ({ players, currentPlayerIndex, currentTurnScore = 0 }) => {
               
               <div className="flex justify-between text-xs text-muted-foreground mt-1">
                 <span>0</span>
-                <span>{1000 - player.score} pts restants</span>
+                <span>{pointsRemaining} pts restants</span>
                 <span>1000</span>
               </div>
             </div>
