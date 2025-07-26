@@ -60,9 +60,8 @@ const ScoreBoard = ({ players, currentPlayerIndex, currentTurnScore = 0 }) => {
               
               {/* Progress bar */}
               <div className="w-full bg-gray-200 rounded-full h-2">
-                <div 
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    player.score === 1000 ? 'bg-yellow-500' : 
+                <div className={`h-2 rounded-full transition-all duration-300 ${
+                    displayScore === 1000 ? 'bg-yellow-500' : 
                     progress >= 75 ? 'bg-red-500' : 
                     progress >= 50 ? 'bg-orange-500' : 
                     'bg-green-500'
